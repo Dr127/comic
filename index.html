@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>
+            Comic Strip
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h4 style="font-size: large;">
+            My Comic Strip
+        </h4>
+        <h3>
+            Take a look at my comic strip!
+        </h3>
+
+       <img id = "panels"src = "Screen Shot 2021-05-07 at 8.25.21 PM.png">
+       <div class="row">
+       <button onclick="panel1()">Panel 1</button>
+       <button onclick="panel2()">Panel 2</button>
+       <button onclick="panel3()">Panel 3</button>
+       <button onclick="panel4()">Panel 4</button>
+       </div>
+       <br>
+       <button onclick="fullimg()">Full image</button>
+       <script>
+           var imgs = ["Screen Shot 2021-05-07 at 8.25.21 PM.png", "Screen Shot 2021-05-07 at 8.25.28 PM.png", "Screen Shot 2021-05-07 at 8.25.36 PM.png", "Screen Shot 2021-05-07 at 8.25.45 PM.png", "pixil-frame-0.png"];
+          function panel1(){
+            document.getElementById("panels").src = imgs[0];
+          };
+          function panel2(){
+            document.getElementById("panels").src = imgs[1];
+          };
+          function panel3(){
+            document.getElementById("panels").src = imgs[2];
+          };
+          function panel4(){
+            document.getElementById("panels").src = imgs[3];
+          };
+          function fullimg(){
+              document.getElementById("panels").src = imgs[4]
+          }
+       </script>
+    </body>
+</html>

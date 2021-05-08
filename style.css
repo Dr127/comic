@@ -1,0 +1,11 @@
+body{
+    text-align: center;
+    background-color: mediumspringgreen;
+}
+img{
+    height: 450px;
+    width: 450;
+}
+button{
+    background-color: rebeccapurple;
+}
